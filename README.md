@@ -22,7 +22,23 @@ Get the [latest release](https://openrct2.org/downloads/releases/latest) of Open
 
 You should now be able to see the help calling `/Games/openrct2/OpenRCT2.AppImage --help`
 
+We need to register the original Game Files using `./Games/openrct2/OpenRCT2.AppImage set-rct2 /Games/RCT2`
+
 The offical Wiki on hosting a server can be found [here](https://github.com/OpenRCT2/OpenRCT2/wiki/Multiplayer)
 
-Let's say we want to host the *Crazy Castle* Scenaio. The respective files are stored within `/Games/RCT2/Scenarios/Crazy Castle.SC6`. 
+Let's say we want to host the *Crazy Castle* Scenaio. 
+
+Start the Game calling `/Games/openrct2/OpenRCT2.AppImage`
+
+Start the Cracy Castles Scenario and save it into `/Games/openrct2/Crazy Castle.sv6` 
+
+Now host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv6 --user-data-path ./CrazyCastle --rct2-data-path /Games/RCT` 
+
+Update config.ini
+
+## Additional Information
+
+OpenRCT2 has an active community. You can download scenarios and tracks [here](https://rctgo.com/)
+
+
 
