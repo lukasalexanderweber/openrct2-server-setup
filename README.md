@@ -20,13 +20,13 @@ Get the [latest release](https://openrct2.org/downloads/releases/latest) of Open
 
 ### Run your Server
 
+(The offical Wiki on hosting a server can be found [here](https://github.com/OpenRCT2/OpenRCT2/wiki/Multiplayer))
+
 You should now be able to see the help calling `/Games/openrct2/OpenRCT2.AppImage --help`
 
 We need to register the original Game Files using `./Games/openrct2/OpenRCT2.AppImage set-rct2 /Games/RCT2`
 
-The offical Wiki on hosting a server can be found [here](https://github.com/OpenRCT2/OpenRCT2/wiki/Multiplayer)
-
-Let's say we want to host the *Crazy Castle* Scenaio. 
+Let's say we want to host a build in Scenaio (here: *Crazy Castle*). 
 
 Start the Game calling `/Games/openrct2/OpenRCT2.AppImage`
 
