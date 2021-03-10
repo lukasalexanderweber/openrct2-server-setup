@@ -1,6 +1,6 @@
 # openrct2-server-setup
 
-This is a workflow how I managed to set up a running OpenRCT2 ([website](https://openrct2.org/) and [github](https://github.com/OpenRCT2/OpenRCT2)) game which is continuously online and where Clients can join as Users. Tested on a vServer of https://www.ionos.de/
+This is a workflow how I managed to set up a running OpenRCT2 ([website](https://openrct2.org/)/[github](https://github.com/OpenRCT2/OpenRCT2)) game which is continuously online and where clients can join as users. Tested on a vServer of https://www.ionos.de/
 
 ## Original Game
 
@@ -30,7 +30,7 @@ Let's say we want to host the *Crazy Castle* Scenaio.
 
 Start the Game calling `/Games/openrct2/OpenRCT2.AppImage`
 
-Start the Cracy Castles Scenario and save it into `/Games/openrct2/Crazy Castle.sv6` 
+Start the Crazy Castles Scenario and save it into `/Games/openrct2/Crazy Castle.sv6` 
 
 Now host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv6 --user-data-path ./CrazyCastle --rct2-data-path /Games/RCT` 
 
