@@ -6,7 +6,7 @@ This is a workflow how I managed to set up a running OpenRCT2 ([website](https:/
 
 ### Get the Game Files
 
-You need the original game files to run OpenRCT2. I got the files from [GOG](https://www.gog.com/game/rollercoaster_tycoon_2). It's really cheap nowadays. Be sure to [download the offline data](https://github.com/lukasalexanderweber/openrct2-server-setup/blob/main/gog%20offline%20data.PNG) and store them under `/Games/RCT2_installer`.
+You need the original game files to run OpenRCT2. I got the files from [GOG](https://www.gog.com/game/rollercoaster_tycoon_2). It's really cheap nowadays. Be sure to [download the offline data](https://github.com/lukasalexanderweber/openrct2-server-setup/blob/main/gog_offline_data.PNG) and store them under `/Games/RCT2_installer`.
 
 ### Extract the Game Files
 
