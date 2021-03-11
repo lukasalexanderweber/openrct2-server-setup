@@ -19,8 +19,7 @@ I use innoextract to extract the game files: `innoextract setup_rollercoaster_ty
 Get the [latest release](https://openrct2.org/downloads/releases/latest) of OpenRCT2. Be sure to download the AppImage (e.g. OpenRCT2-0.3.2-linux-x86_64.AppImage) for Linux. I rename and store the file into `/Games/openrct2/OpenRCT2.AppImage`.
 
 ### Start RCT2 and Create a Saved Game
-
-**!!!** If you cannot display graphics on your Server you can create the sv6 with the PC you will play OpenRCT2 or download `Crazy Castle.sv6` from this repository.
+(If you cannot display graphics on your Server you can create the sv6 with the PC you will play OpenRCT2 or download `Crazy Castle.sv6` from this repository)
 
 You should now be able to see the help calling `/Games/openrct2/OpenRCT2.AppImage --help`
 
@@ -38,7 +37,7 @@ Start the Crazy Castles Scenario and save it into `/Games/openrct2/Crazy Castle.
 
 Now we want to host the saved game.
 
-Host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv6 --user-data-path ./CrazyCastle --rct2-data-path /Games/RCT --headless` 
+Host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv6 --user-data-path ./CrazyCastle --rct2-data-path /Games/RCT --headless`. Note that --headless will not open the game interface.
 
 After the Server is running you can close it immedially using `CTRL+C`
 
@@ -71,7 +70,13 @@ By default each Client entering the server will get the "Spectator" role and wil
 
 #### In-Game
 
-#### Move the users.json
+(If you cannot display graphics on your Server you can move to the next step)
+
+Host and enter the server calling `/Games/openrct2/OpenRCT2.AppImage host /Games/openrct2/CrazyCastle/save/Crazy Castle.sv6 --user-data-path /Games/openrct2/CrazyCastle`. Click on the network icon and set the default user group s displayed [here](https://github.com/lukasalexanderweber/openrct2-server-setup/blob/main/change_default_user_group.png). By doing this a `/Games/openrct2/CrazyCastle/groups.json` will be created and modified, allowing your friends to join directly as Users. 
+
+#### Directly download the groups.json
+
+Download the [groups.json](https://github.com/lukasalexanderweber/openrct2-server-setup/blob/main/groups.json) which is created in the previous step into `/Games/openrct2/CrazyCastle/groups.json` 
 
 ### Run a permanent Server as a Service
 
