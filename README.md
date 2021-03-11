@@ -20,7 +20,7 @@ Get the [latest release](https://openrct2.org/downloads/releases/latest) of Open
 
 ### Start RCT2 and Create a Saved Game
 
-**!** If you cannot display graphics on your Server you can create the sv6 with the PC you will play OpenRCT2 or download `Crazy Castle.sv6` from this repository.
+**!!!** If you cannot display graphics on your Server you can create the sv6 with the PC you will play OpenRCT2 or download `Crazy Castle.sv6` from this repository.
 
 You should now be able to see the help calling `/Games/openrct2/OpenRCT2.AppImage --help`
 
