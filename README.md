@@ -40,7 +40,7 @@ Now we want to host the saved game.
 
 Host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv6 --user-data-path ./CrazyCastle --rct2-data-path /Games/RCT --headless` 
 
-After the Server is running you can immedially close the server using `CTRL+C`
+After the Server is running you can close it immedially using `CTRL+C`
 
 Note that `--user-data-path ./CrazyCastle` created the Folder `/Games/openrct2/OpenRCT2.AppImage/CrazyCastle` with a `config.ini` included
 
