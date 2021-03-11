@@ -10,7 +10,7 @@ You need the original game files to run OpenRCT2. I got the files from [GOG](htt
 
 ### Extract the Game Files
 
-I use innoextract to extract the game files: `innoextract setup_rollercoaster_tycoon2_german_2.0.0.6.exe` <br/> Delete **tmp** and move the **app** content into  `/Games/RCT2`. Now you can now delete `/Games/RCT2_installer`. Thanks to [this Tutorial](https://wiki.ubuntuusers.de/Spiele/OpenRCT2/)!
+I use innoextract to extract the game files: `innoextract setup_rollercoaster_tycoon2_german_2.0.0.6.exe` <br/> Delete **tmp** and move the **app** content into  `/Games/RCT2`. Now you can now delete `/Games/RCT2_installer`. Credits to [this Tutorial](https://wiki.ubuntuusers.de/Spiele/OpenRCT2/)!
 
 ## OpenRCT2
 
@@ -80,11 +80,33 @@ Download the [groups.json](https://github.com/lukasalexanderweber/openrct2-serve
 
 ### Run a permanent Server as a Service
 
-[Official Wiki](https://github.com/OpenRCT2/OpenRCT2/wiki/Multiplayer#running-as-a-service-on-linux-with-systemd)
+To run the server permanently as a service see the [Official Wiki](https://github.com/OpenRCT2/OpenRCT2/wiki/Multiplayer#running-as-a-service-on-linux-with-systemd).
+In this example you can add the following into `/etc/systemd/system/openrct2.service`
+```
+[Unit]
+Description=OpenRCT2 server instance
+After=network.target
+
+[Service]
+ExecStart=/Games/openrct2/OpenRCT2.AppImage host /Games/openrct2/CrazyCastle/save/Crazy Castle.sv6 --user-data-path /Games/openrct2/CrazyCastle --headless
+
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Start the service using<br/>
+`systemctl daemon-reload`<br/>
+`systemctl enable openrct2.service`<br/>
+`systemctl start openrct2.service`
+
+Stop the service using<br/>
+`systemctl stop openrct2.service`
 
 ## Additional Information
 
-OpenRCT2 has an active community. You can download scenarios and tracks [here](https://rctgo.com/)
+OpenRCT2 has an active community on [reddit](https://www.reddit.com/r/openrct2/). You can download scenarios and tracks [here](https://rctgo.com/)
 
 
 
