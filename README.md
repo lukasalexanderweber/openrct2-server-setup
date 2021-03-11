@@ -42,15 +42,25 @@ Host a Server calling `/Games/openrct2/OpenRCT2.AppImage host ./Crazy\ Castle.sv
 
 After the Server is running you can close it immedially using `CTRL+C`
 
-Note that `--user-data-path ./CrazyCastle` created the Folder `/Games/openrct2/OpenRCT2.AppImage/CrazyCastle` with a `config.ini` included
+Note that `--user-data-path ./CrazyCastle` created the Folder `/Games/openrct2/CrazyCastle` with a `config.ini` included
 
 To tidy up stuff move `/Games/openrct2/Crazy Castle.sv6` into `/Games/openrct2/CrazyCastle/save/Crazy Castle.sv6` (in this folder will also be the autosaves)
 
-Update the config.ini in this folder (there is also a global config.ini under ...path..., however if you e.g. want to host two games on different ports this is the go-to option). For all available settings see [Settings in config.ini](https://github.com/OpenRCT2/OpenRCT2/wiki/Settings-in-config.ini)
+Update the `/Games/openrct2/CrazyCastle/config.ini` in this folder. For all available settings see [Settings in config.ini](https://github.com/OpenRCT2/OpenRCT2/wiki/Settings-in-config.ini)
 
 For us the most important ones are:
-
-
+```
+game_path = "/Games/RCT2"        -> where the original game files are stored
+player_name = "Host"             -> The name of the "Player" hosting the game
+default_port = 11753             -> OpenRCT2 default port is 11753
+listen_address = "12.345.67.890" -> The IP-Adress of your Server
+default_password = "MyPW"        -> A PW if you want
+stay_connected = true               
+advertise = true                  -> That your friend can see the server on the server list
+advertise_address = "12.345.67.890" 
+server_name = "MyAwesomeHostedServer"
+pause_server_if_no_clients = true -> Pause the game if no one is in it, so you can continue playing later
+```
 *Note that before the next step you probably want to Set Permissions (see next chapter)*
 
 Now you can finally host the server calling `/Games/openrct2/OpenRCT2.AppImage host /Games/openrct2/CrazyCastle/save/Crazy Castle.sv6 --user-data-path /Games/openrct2/CrazyCastle --headless`
