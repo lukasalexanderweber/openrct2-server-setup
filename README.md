@@ -12,6 +12,8 @@ You need the original game files to run OpenRCT2. I got the files from [GOG](htt
 
 I use innoextract to extract the game files: `innoextract setup_rollercoaster_tycoon2_german_2.0.0.6.exe` <br/> Delete **tmp** and move the **app** content into  `/Games/RCT2`. Now you can now delete `/Games/RCT2_installer`. Credits to [this Tutorial](https://wiki.ubuntuusers.de/Spiele/OpenRCT2/)!
 
+Of course you can use other instructions to obtain the game files. For our example it's just important to have the files in `/Games/RCT2`
+
 ## OpenRCT2
 
 ### Get the AppImage
