@@ -25,7 +25,7 @@ Get the [latest release](https://openrct2.org/downloads/releases/latest) of Open
 
 You should now be able to see the help calling `/Games/openrct2/OpenRCT2.AppImage --help`
 
-We need to register the original Game Files using `./Games/openrct2/OpenRCT2.AppImage set-rct2 /Games/RCT2`
+We need to register the original Game Files using `/Games/openrct2/OpenRCT2.AppImage set-rct2 /Games/RCT2`
 
 Let's say we want to host a build-in scenario (here: *Crazy Castle*)
 
